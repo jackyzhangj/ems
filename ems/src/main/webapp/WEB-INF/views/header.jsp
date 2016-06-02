@@ -27,7 +27,7 @@
 				</ul></li>
 			<li><a href="#">台账管理</a></li>
 			<li><a href="/ems/log">日志管理</a></li>
-			<li><a href="#">权限管理</a></li>
+			<li><a href="/ems/authority">权限管理</a></li>
 			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">网络控制台<span class="caret"></span>
 			</a>
 				<ul class="dropdown-menu">
