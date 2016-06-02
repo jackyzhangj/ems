@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ems Maven Webapp"
+  id="myeclipse.1464836132084"
+  context-root="/ems"
+  j2ee-spec="5.0"
+  archive="ems Maven Webapp.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
