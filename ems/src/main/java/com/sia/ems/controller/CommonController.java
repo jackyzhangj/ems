@@ -17,8 +17,20 @@ public class CommonController extends BaseController {
 	 *            ：模型对象
 	 * @return 视图名称
 	 */
+	@RequestMapping(value = "/pagenotfound")
+	public String pagenotfound(Model model) {
+		return "404";
+	}
+
+	/**
+	 * 500错误页面
+	 * 
+	 * @param model
+	 *            ：模型对象
+	 * @return 视图名称
+	 */
 	@RequestMapping(value = "/error")
 	public String error(Model model) {
-		return "404";
+		return "500";
 	}
 }

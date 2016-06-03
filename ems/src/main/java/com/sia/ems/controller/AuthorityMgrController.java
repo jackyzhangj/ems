@@ -18,9 +18,10 @@ public class AuthorityMgrController extends BaseController {
 	 * @param model
 	 *            ：模型对象
 	 * @return 视图名称
+	 * @throws Exception
 	 */
 	@RequestMapping(value = "/authority/{type}")
-	public ModelAndView showAuthority(@PathVariable String type) {
+	public ModelAndView showAuthority(@PathVariable String type) throws Exception {
 		ModelAndView mav = new ModelAndView("authority/authority");
 		mav.addObject("type", type);
 		mav.addObject("user", mSession.getAttribute(USER_KEY));
@@ -39,11 +40,13 @@ public class AuthorityMgrController extends BaseController {
 		}
 		// 历史曲线
 		else if (type.equals("history")) {
+			throw new NullPointerException("NullPointerException Test!");
 		}
 		// 数据库操作
 		else if (type.equals("db")) {
+			throw new Exception("");
 		} else {
-			mav.setView(new RedirectView("/ems/error", false));
+			mav.setView(new RedirectView("/ems/pagenotfound", false));
 		}
 		return mav;
 	}
