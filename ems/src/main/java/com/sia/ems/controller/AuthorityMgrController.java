@@ -40,7 +40,10 @@ public class AuthorityMgrController extends BaseController {
 		}
 		// 历史曲线
 		else if (type.equals("history")) {
-			throw new NullPointerException("NullPointerException Test!");
+			String str = null;
+			if (str.length() == 0){
+				
+			}
 		}
 		// 数据库操作
 		else if (type.equals("db")) {
